@@ -1,2 +1,3 @@
-# blackboxai-1743278043058
-Built by https://www.blackbox.ai
+# GoogleSearchOperator-enhanced
+
+A Chrome extension that enhances Google searches with convenient search operators
