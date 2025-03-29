@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search Operator Enhancer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-search"></i> Search Operator Enhancer</h1>
+            <p class="subtitle">Add powerful search operators to your Google queries</p>
+        </header>
+
+        <div class="operators-grid">
+            <button class="operator-btn" data-operator="site:">
+                <i class="fas fa-globe"></i>
+                site:
+                <span class="tooltip">Search within a specific website</span>
+            </button>
+            <button class="operator-btn" data-operator="intitle:">
+                <i class="fas fa-heading"></i>
+                intitle:
+                <span class="tooltip">Search in page titles</span>
+            </button>
+            <button class="operator-btn" data-operator="inurl:">
+                <i class="fas fa-link"></i>
+                inurl:
+                <span class="tooltip">Search in page URLs</span>
+            </button>
+            <button class="operator-btn" data-operator="filetype:">
+                <i class="fas fa-file"></i>
+                filetype:
+                <span class="tooltip">Search for specific file types</span>
+            </button>
+            <button class="operator-btn" data-operator="before:">
+                <i class="fas fa-calendar"></i>
+                before:
+                <span class="tooltip">Search before a date</span>
+            </button>
+            <button class="operator-btn" data-operator="after:">
+                <i class="fas fa-calendar-alt"></i>
+                after:
+                <span class="tooltip">Search after a date</span>
+            </button>
+            <button class="operator-btn" data-operator="-">
+                <i class="fas fa-minus-circle"></i>
+                exclude
+                <span class="tooltip">Exclude terms from search</span>
+            </button>
+            <button class="operator-btn" data-operator="&quot;">
+                <i class="fas fa-quote-right"></i>
+                exact phrase
+                <span class="tooltip">Search for exact phrase</span>
+            </button>
+        </div>
+
+        <div class="custom-operator">
+            <div class="input-group">
+                <input type="text" id="custom-operator" placeholder="Enter custom operator">
+                <button id="apply-custom" class="apply-btn">
+                    <i class="fas fa-plus"></i> Apply
+                </button>
+            </div>
+        </div>
+
+        <footer>
+            <div class="status" id="status"></div>
+        </footer>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
